@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <!-- I input this font from google to give it an aesthetic vibe -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Get Organized (To-do List App) </title>
+	    <!-- Linking the css sheet -->
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="box">
+ 	<div class="getOrganized">
+ 		    <!-- Setting the icon with the title for personalization -->
+
+<h2>Get Organized <img src="icon.png" style="height:30px; width:30px; margin-left: 5px;"></h2>
+<div class="inputs">
+	    <!-- Allowing task to be added to a list -->
+
+	<input type="text" id="InputOfTask" placeholder="Add Task to List">
+    <!-- Also adding in for date input and priority levels -->
+
+	 <input type="date" id="InputOfDate">
+	 <select id="InputOfPriority">
+  <option value="Very Important">Very Important</option>
+  <option value="Important" selected>Important</option>
+  <option value="Not Important">Not Important</option>
+</select>
+    <!-- Adding function so when someone clicks on button, tasks get added into the list-->
+
+	<button onclick="PuttingInTask()"> Add </button>
+</div>
+<ul id="ContainerOfList">
+	<!--   <li class="checked">Task 1</li>
+	<li>Task 2</li>
+	<li>Task 3</li>  -->
+
+	</ul>
+ </div>
+</div>
+    <!-- Now linking the javascript file-->
+
+<script src="scroll.js"></script>
+	</body>
+	</html>

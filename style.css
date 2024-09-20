@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  /* For font */
+
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8A6240, #4C6444);
+  /* Beautiful olive green and beige background */
+
+  padding: 10px;
+}
+
+.getOrganized {
+  width: 100%;
+  max-width: 540px;
+  background: rgba(227, 212, 173, 0.7);
+  /* 0.7 for transparency to bring personalization and modern feel */
+
+  margin: 200px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 25px;
+}
+
+.getOrganized h2 {
+  color: #1C4620;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  /* How input will look*/
+
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 12px 12px;
+  background: #154734;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 70px;
+  /* Button styling to go with the theme */
+
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 13px 9px 13px 52px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url('uncheck.png');
+  /*If unchecked then show clear white circle*/
+
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+ul li.Ifchecked::before {
+  background-image: url('check.jpg'); /* if checked then aesthetic smiley shown for dopamine release*/
+
+}
+
+ul li.Ifchecked {
+  color: #555;
+  text-decoration: line-through;
+  /* Strike-through for sense of achievement */
+
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: rgba(227, 212, 173, 1);
+  /* If we hover on top then opacity full to show differnece*/
+
+}
+
+li .due-date {
+  float: right;
+  padding-right: 25px;
+  color: #555;
+  /* Personalizaiton of due date entry */
+
+}
+
+li span {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
